@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar"; // Changed import
 export default function RootLayout() {
 	return (
 		<>
-			<StatusBar style="dark" />{" "}
+			<StatusBar style="dark" />
 			<Stack
 				screenOptions={{ headerShown: false, orientation: "portrait" }}
 			>

@@ -1,16 +1,14 @@
 import {
 	ScrollView,
 	StyleSheet,
-	Text,
-	View,
-	StyleProp,
-	ViewStyle,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import FlatCards from "@/components/FlatCards";
 import ElevatedCards from "@/components/ElevatedCards";
 import FancyCards from "@/components/FancyCards";
+import ActionCards from "@/components/ActionCards";
+import ContactList from "@/components/ContactList";
 
 const index = () => {
 	return (
@@ -20,10 +18,12 @@ const index = () => {
 				flex: 1,
 			}}
 		>
-			<ScrollView>
+			<ScrollView showsVerticalScrollIndicator={false}>
 				<FlatCards />
 				<ElevatedCards />
 				<FancyCards />
+				<ActionCards />
+				<ContactList />
 			</ScrollView>
 		</SafeAreaView>
 	);
